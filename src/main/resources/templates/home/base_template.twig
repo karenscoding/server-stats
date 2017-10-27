@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8"></meta>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+    <meta name="description" content=""></meta>
+    <meta name="author" content=""></meta>
+    <title>
+        {% block title %}
+            Server Statistics
+        {% endblock %}
+    </title>
+
+    {% block extraMetadata %}
+    
+    {% endblock %}
+        <link rel="stylesheet" href={{ '/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css' | path }} media="screen"/>
+        <link rel="stylesheet" href={{ '/webjars/jquery-ui/1.12.1/jquery-ui.min.css' | path }} media="screen" />
+        <link rel="stylesheet" href={{ '/webjars/jquery-ui-themes/1.12.1/base/theme.css' | path }} media="screen" />
+        <link rel="stylesheet" href={{ '/webjars/font-awesome/4.7.0/css/font-awesome.min.css' | path }} media="screen" />
+        <link href="/css/core.css" rel="stylesheet" media="screen" />
+        <link href="/css/core_print.css" rel="stylesheet" media="print" />
+    
+    {% block stylesextra %}
+        
+    {% endblock %}
+</head>
+<body >
+    {% block header %}
+        
+    {% endblock %}
+    {% block subMenuBlock %}
+        <div class="container-fluid ">
+            <div class="row sub-menu-block " >
+                
+                
+            </div>
+        </div>    
+    {% endblock %}
+    {% block content %}
+        <div class="container-fluid" id="core-content" >
+            {% block contentTitle %}
+            
+            {% endblock %}
+            {% block userMessages %}
+                
+            {% endblock %}
+            {% block hiddenTranslationsBlock %}
+               
+            {% endblock %}
+            {% block contentBody %}
+            
+            {% endblock %}
+        </div>
+    {% endblock %}
+    
+    
+    {% block footer %}
+        
+    {% endblock %}
+    <!-- <script src="https://www.java.com/js/deployJava.js"></script> -->
+    <script src="/webjars/jquery/3.1.1/jquery.min.js"></script>
+    <script src="/webjars/jquery-ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js" ></script>
+    <script src="/webjars/tinymce/4.2.1/tinymce.min.js" ></script>
+    <script src="/webjars/angularjs/1.6.4/angular.min.js"></script>
+    <script src="/js/core.js"></script>
+    
+    {% block extraScripts %}
+    
+    {% endblock %}
+</body>
+</html>
