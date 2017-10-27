@@ -80,7 +80,7 @@ public class Application extends WebMvcConfigurerAdapter {
         FilterRegistrationBean registrationBean = new FilterRegistrationBean();
         CharacterEncodingFilter characterEncodingFilter = new CharacterEncodingFilter();
         characterEncodingFilter.setEncoding(UTF_8);
-        //registrationBean.setFilter(characterEncodingFilter);
+        registrationBean.setFilter(characterEncodingFilter);
         return registrationBean;
     }
     
